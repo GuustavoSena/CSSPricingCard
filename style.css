@@ -151,9 +151,14 @@ button:hover {
     color: hsl(204, 43%, 93%);
 }
 
-.right-low-box-text p {
+.right-low-box-text  li {
     margin: 2px 0px 0px 2px;
     font-family: 'Karla', sans-serif;
     font-weight: 400;
     color: hsl(210, 6%, 79%);
+    list-style-type: none;
+}
+
+.right-low-box-text  ul {
+    padding: 0px;
 }
