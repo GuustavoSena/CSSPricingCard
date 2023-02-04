@@ -25,18 +25,10 @@ body {
     border-top-left-radius: 8px;
 }
 
-.lower-box {
-    position: absolute;
-    height: 50%;
-    width: 100%;
-    bottom: 0px;
-    border-bottom-right-radius: 8px;
-    border-bottom-left-radius: 8px;
-}
-
 .left-low-box {
     position: absolute;
-    height: 100%;
+    bottom: 0px;
+    height: 50%;
     width: 50%;
     background-color: #24ABA9;
     border-bottom-left-radius: 8px;
@@ -44,7 +36,8 @@ body {
 
 .right-low-box {
     position: absolute;
-    height: 100%;
+    bottom: 0px;
+    height: 50%;
     width: 50%;
     right: 0px;
     background-color: #40B7B6;
