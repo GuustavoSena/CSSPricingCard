@@ -155,3 +155,53 @@ button:hover {
 .right-low-box ul {
     padding: 0px;
 }
+
+@media (max-width: 750px){
+
+    .masterbox{
+        width: 340px;
+        height: 720px;
+    }
+
+    .upper-box{
+        position: static;
+        height: 33.33%;
+        padding: 10px 10px 10px 15px;
+    }
+
+    .upper-box h2{
+        margin-bottom: 10px;
+    }
+
+    .upper-box h3{
+        margin-top: 0px;
+    }
+
+
+    .left-low-box{
+        position: static;
+        height: 33.33%;
+        width: 100%;
+        border-radius: 0px;
+    }
+
+    .left-low-box h3{
+        margin-top: 0px;
+    }
+
+    #thirdP{
+        margin-bottom: 5px;
+    }
+
+    .right-low-box{
+        position: static;
+        height: 33.33%;
+        width: 100%;
+        border-bottom-left-radius: 8px;
+    }
+
+    .right-low-box h3{
+       margin-top: 0px;
+    }
+
+}
