@@ -1,207 +1,198 @@
-html{
+html {
+    height: 100vh;
     box-sizing: border-box;
 }
 
-*, *::before, *::after{
+*,
+*::before,
+*::after {
     box-sizing: inherit;
 }
 
 body {
-    margin: 0;
-    height: 100vh;
-    width: 100vw;
     background-color: #E4EDF2;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Karla', sans-serif;
+    margin: 0px;
 }
 
-.masterbox {
-    position: relative;
-    width: 700px;
-    height: 520px;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 10px;
-    box-shadow: 10px 10px 30px #888888;
+.dad-box {
+    width: 280px;
+    height: 690px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 3px 8px 13px 0px rgba(0, 0, 0, 0.33);
+    border-radius: 8px;
 }
 
-.upper-box {
-    position: absolute;
-    height: 45%;
-    width: 100%;
-    background-color: white;
+#first-child {
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    height: 230px;
     border-top-right-radius: 8px;
     border-top-left-radius: 8px;
-    padding: 25px;
 }
 
-.upper-box h2 {
+#first-child h2 {
     color: #24ABA9;
-    font-family: 'Karla', sans-serif;
-    font-weight: 700;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
-.upper-box h3 {
+#first-child h3 {
     color: #B8D945;
-    font-family: 'Karla', sans-serif;
+    font-size: 0.9em;
+    margin-bottom: 10px;
     font-weight: 700;
-    margin-bottom: 15px;
 }
 
-.upper-box p {
-    color: #9FA4AD;
-    font-family: 'Karla', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    margin: 0px 0px 8px 0px
+#first-child p {
+    color: hsl(218, 22%, 67%);
+    font-size: 0.85em;
+    line-height: 20px;
 }
 
-.left-low-box {
-    position: absolute;
-    bottom: 0px;
-    height: 55%;
-    width: 50%;
-    background-color: #24ABA9;
-    border-bottom-left-radius: 8px;
-    padding: 25px;
-}
-
-.left-low-box h3 {
-    margin-bottom: 15px;
-    font-family: 'Karla', sans-serif;
-    font-weight: 700;
-    color: hsl(204, 43%, 93%);
-}
-
-.left-low-box button {
-    background-color: #B8D945;
-    width: 100%;
-    border: none;
-    border-radius: 5px;
-    padding: 17px 0px 17px 0px;
-    font-family: 'Karla', sans-serif;
-    font-weight: 700;
-    font-size: 19px;
-    color: white;
-    transition: all .3s ease-in-out;
-    cursor: pointer;
-    box-shadow: 8px 8px  rgb(0, 0, 0);
-    margin-top: 15px;
-}
-
-.price {
-    font-size: 30px;
+#first-child>* {
     margin: 0px;
-    color: white;
     font-family: 'Karla', sans-serif;
-    font-weight: 700;
+}
+
+#second-child {
+    background-color: #24ABA9;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px;
+    height: 230px;
+}
+
+#second-child>* {
+    font-family: 'Karla', sans-serif;
+}
+
+#second-child h3 {
+    color: white;
+    margin-bottom: 10px;
+    margin-top: 0px;
 }
 
 .price-line {
-    display: inline-block;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    height: 20px;
 }
 
+#price {
+    font-size: 1.8em;
+    font-weight: 700;
+    color: white;
+}
 
-.info-price {
-    color: hsl(218, 22%, 67%);
-    font-family: 'Karla', sans-serif;
-    font-weight: 400;
-    margin-left: 10px;
-    position: relative;
-    bottom: 3px;
-    margin: 0px 0px 0px 10px;
+#info-price {
+    font-size: 0.9em;
+    color: hsl(215, 13%, 82%);
+    opacity: 0.7;
 }
 
 #thirdP {
-    font-family: 'Karla', sans-serif;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    color: white;
+    opacity: 0.8;
+}
+
+button {
+    padding: 13px 0px 13px 0px;
+    background-color: #B8D945;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+    box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.33);
     font-weight: 700;
-    color: hsl(210, 5%, 84%);
-    margin-top: 5px;
 }
 
 button:hover {
-    background-color: hsl(210, 5%, 84%);
-    color: black;
     transform: scale(1.1) perspective(1px);
     box-shadow: none;
 }
 
-.right-low-box {
-    position: absolute;
-    bottom: 0px;
-    height: 55%;
-    width: 50%;
-    right: 0px;
+#third-child {
     background-color: #40B7B6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+    height: 230px;
     border-bottom-right-radius: 8px;
-    padding: 25px;
+    border-bottom-left-radius: 8px;
 }
 
-.right-low-box h3 {
-    margin-bottom: 15px;
+#third-child>* {
+    margin: 0px;
     font-family: 'Karla', sans-serif;
-    font-weight: 700;
-    color: hsl(204, 43%, 93%);
 }
 
-.right-low-box li {
-    margin: 2px 0px 0px 2px;
-    font-family: 'Karla', sans-serif;
-    font-weight: 400;
-    color: hsl(210, 6%, 79%);
-    list-style-type: none;
-}
-
-.right-low-box ul {
+#third-child ul {
     padding: 0px;
+    list-style-type: none;
+    color: hsl(215, 13%, 82%);
+    opacity: 0.85;
+    font-size: 0.8em;
+    line-height: 18px;
 }
 
-@media (max-width: 750px){
+#third-child h3 {
+    color: white;
+    margin-bottom: 15px;
+}
 
-    .masterbox{
-        width: 340px;
-        height: 720px;
+@media (min-width: 730px) {
+
+    .dad-box{
+        width: 650px;
+        height: 450px;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
 
-    .upper-box{
-        position: static;
-        height: 33.33%;
-        padding: 10px 10px 10px 15px;
+    #first-child{
+        height: 45%;
+        padding: 30px;
+        justify-content: center;
     }
 
-    .upper-box h2{
-        margin-bottom: 10px;
+    #second-child{
+        height: 55%;
+        width: 50%;
+        border-bottom-left-radius: 8px;
+        justify-content: center;
+        gap: 10px;
+        padding: 30px;
     }
 
-    .upper-box h3{
-        margin-top: 0px;
-    }
-
-
-    .left-low-box{
-        position: static;
-        height: 33.33%;
-        width: 100%;
-        border-radius: 0px;
-    }
-
-    .left-low-box h3{
-        margin-top: 0px;
+    #second-child h3{
+        margin-bottom: 20px;
     }
 
     #thirdP{
-        margin-bottom: 5px;
+        margin-bottom: 20px;
     }
 
-    .right-low-box{
-        position: static;
-        height: 33.33%;
-        width: 100%;
-        border-bottom-left-radius: 8px;
+    #third-child{
+        height: 55%;
+        width: 50%;
+        border-bottom-left-radius: 0px;
+        padding: 30px;
     }
 
-    .right-low-box h3{
-       margin-top: 0px;
-    }
 
 }
